@@ -16,7 +16,7 @@ while True:
     if isprime(num):
         theprimenumber = num
         print "Counter: %d, Prime number: %d " % (counter, theprimenumber)
-        if counter <= 10001:
+        if counter < 10001:
             counter += 1
         else:
             break
