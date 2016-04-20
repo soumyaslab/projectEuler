@@ -12,27 +12,22 @@ def ispalindrome (n):
     else:
         #print "%d is not a palindrom number." % n
         return False
-        
+
+
+## some globals      
 a , b , pnum = 999,999,0
 braker = False
-
-#pnum = int(raw_input("Enter your number: "))
+maxp,maxa,maxb = 0,0,0
 
 while (a > 99):
-    b = 999
+    b = a
     while(b > 99):
         pnum = a * b
-        print "Nuw number: a:%d x b:%d = %d " % (a,b,pnum)
-        if ispalindrome(pnum):
-            print "%d is a palindrom number." % pnum
-            print "a is: %d " % a
-            print "b is: %d " % b
-            braker = True
-            break
+        if (ispalindrome(pnum) and (pnum > maxp)):
+            maxp = b * a
+            maxa = a
+            maxb = b
         b -= 1
-        
-    if (braker == True):
-        break
     a -= 1
 
-#ispalindrome(pnum)
+print "MAX Palindrome: a: %d  X  b: %d  =  %d " % (maxa,maxb,maxp)
