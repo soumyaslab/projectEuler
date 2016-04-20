@@ -22,6 +22,7 @@ while (a > 99):
     b = 999
     while(b > 99):
         pnum = a * b
+        print "Nuw number: a:%d x b:%d = %d " % (a,b,pnum)
         if ispalindrome(pnum):
             print "%d is a palindrom number." % pnum
             print "a is: %d " % a
