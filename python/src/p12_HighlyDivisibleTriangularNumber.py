@@ -10,9 +10,9 @@ def find_numcount(count):
         #sleep(1)
         counter = 0
         divided_by = 1
-        print "*********************************************"
-        print "Divisor set for number: " + str(num)
-        print "*********************************************"
+#         print "*********************************************"
+#         print "Divisor set for number: " + str(num)
+#         print "*********************************************"
         while (True):
             #sleep(1)
             #print "2nd loop .."
@@ -21,14 +21,15 @@ def find_numcount(count):
                 if not (num % divided_by):
                     #print "1st if statement .."
                     counter += 1
-                    print "Num: " + str(num) + " and divided_by: " + str(divided_by) 
-                    print "Counter is: " + str(counter)
+#                     print "Num: " + str(num) + " and divided_by: " + str(divided_by) 
+#                     print "Counter is: " + str(counter)
                 if counter == count:
                     #print "2nd if statement .."
                     return num
                 divided_by += 1
             else:
                 break
+        print "Number is: < " + str(num) + " >  and  Divisor count: < " + str(counter) + " >"
         num += 1
         
 no_counters = int(raw_input("Enter the required count: "))
