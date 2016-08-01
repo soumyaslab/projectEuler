@@ -28,19 +28,19 @@ def find_triangular_index(factor_limit):
     lnum, rnum = num_divisors(n), num_divisors(n+1)
     print "lnum: " + str(lnum) + " rum: " + str(rnum)
     print "***********>>>>>>>><<<<<<<**********"
-    sleep(1)
+    #sleep(1)
     while lnum * rnum < 500:
         n += 1        
         print "Round: " +  str(n)        
         lnum, rnum = rnum, num_divisors(n+1)
         print "lnum: " + str(lnum) + " rum: " + str(rnum)
-        sleep(1)
+        #sleep(1)
     return n
  
 start = time.time()
 index = find_triangular_index(500)
 print "The index: " + str(index)
-sleep(1)
+#sleep(1)
 triangle = (index * (index + 1)) / 2
 elapsed = (time.time() - start)
  
