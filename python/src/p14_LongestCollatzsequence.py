@@ -50,8 +50,3 @@ elapsed = (time.time() - start)
 print "The highest number of list is: " + str(final_key)
 print "\nresult %s returned in %s seconds.\n" % (final_key,elapsed)
 print collatz[final_key]
-
-
-
-
-    
